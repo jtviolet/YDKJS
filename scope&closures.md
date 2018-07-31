@@ -42,8 +42,8 @@ var c = foo( 2 );
     3. Engine asks Scope for b, then assigns b to a (`var b =`)
 2. Identify all the RHS look-ups (there are 4):
     1. Engine asks Scope for foo (`foo( 2 );`)
-    2. Engine asks Scope for a (`= a`)
-    3. Engine asks Scope for a, again (`a +`) **Note: Engine doesn't care what b was previously, only if it exists so it can assign a into b.**
+    2. Engine asks Scope for a (`= a`) **Note: Engine doesn't care what b was previously, only if it exists so it can assign a into b.**
+    3. Engine asks Scope for a, again (`a +`)
     4. Engine asks scope for b, again (`+ b`)
 
 
